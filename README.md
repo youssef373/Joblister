@@ -1,5 +1,5 @@
 # JobLister
-My first PHP project. Joblister is an app where you can find your dream job!
+Joblister is an app where you can find your dream job!
 
 This app was built with Xampp Stack
 
