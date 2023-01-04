@@ -1,6 +1,5 @@
 # JobLister
-Joblister is an app where you can find your dream job!
-
+Joblister is an app where you can search for a job!
 
 With this app you can:
 - create jobs
