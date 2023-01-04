@@ -12,17 +12,17 @@ class Database
         PDO::ATTR_PERSISTENT => true,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ];
-
+    //DB Connect
     private $conn;
 
-    //DB Connect
     public function connect(): PDO
     {
-        //PDO Instance
+
         try
         {
             //set dsn
             $dsn = "mysql:host=$this->host;dbname=$this->db_name";
+            //PDO Instance
             $this->conn = new PDO($dsn,$this->username,$this->password,$this->options);
         }
         catch (PDOException $e)

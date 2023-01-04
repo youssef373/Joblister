@@ -20,15 +20,12 @@ class Job
                 ON jobs.category_id = categories.id
                 ORDER BY post_date DESC
         ";
-
         //prepare query
         $stmt = $this->conn->prepare($query);
-
         //execute the query
         $stmt->execute();
 
         return $stmt;
-
     }
 
     //Get Categories
@@ -42,7 +39,6 @@ class Job
         $stmt->execute();
 
         return $stmt;
-
     }
 
     //Get Jobs By Category
