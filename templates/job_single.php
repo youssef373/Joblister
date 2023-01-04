@@ -11,7 +11,7 @@ $conn = $database->connect();
 $job = new Job($conn);
 
 $result =  $job->getJob($id);
-while ($row = $result->fetch()){?>
+while ($row = $result->fetch()) { ?>
     <h2 class="page-header"><?php echo $row['job_title']?>
         (<?php echo $row['location'];?>)</h2 >
     <small>Posted by <?php echo $row['contact_user']?> on <?php echo $row['post_date'];?></small>
@@ -40,9 +40,7 @@ while ($row = $result->fetch()){?>
         </form>
     </div>
 
-
     <?php
 }
-
     ?>
 <?php include '../inc/footer.php';

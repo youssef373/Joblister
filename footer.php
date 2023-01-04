@@ -1,6 +1,6 @@
 
 <footer class="footer">
-    <p>&copy; 2016 Joblister, Inc.</p>
+    <p>&copy; 2022 Joblister, Inc.</p>
 </footer>
 
 </div> <!-- /container -->

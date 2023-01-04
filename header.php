@@ -33,9 +33,7 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
-
     </div>
 
     <?php displayMessage(); ?>

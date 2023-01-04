@@ -1,17 +1,12 @@
-
 <?php
 require_once("init.php")
 ?>
-
 <?php
 //instantiate the database class
 $database = new Database();
 $conn = $database->connect();
 //instantiate the job class
 $job = new Job($conn);
-
-
-
 $id = $_GET['id'];
 $template = new Template('templates/job-edit.php');
 echo $template;
@@ -27,6 +22,7 @@ if(isset($_POST['submit'])) {
     $data['salary'] = $_POST['salary'];
     $data['contact_user'] = $_POST['contact_user'];
     $data['contact_email'] = $_POST['contact_email'];
+
     if($job->update($id,$data))
     {
         redirect('index.php', 'Your job has been updated', 'success');

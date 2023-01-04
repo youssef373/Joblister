@@ -32,8 +32,5 @@ if(isset($_POST['submit'])) {
         redirect('index.php', 'Something went wrong', 'error');
     }
 }
-
-
-
 ?>
 
